@@ -1,0 +1,89 @@
+<div class="py-5">
+  <div class="row">
+    <div class="col-md-8 mx-auto">
+      <span class="anchor" id="formLogin"></span>
+
+      <!-- form card login -->
+      <div class="card ">
+        <div class="card-header">
+          <h3 class="mb-0">Register</h3>
+        </div>
+        <div class="card-body">
+          <form class="form">
+            <div class="form-group ">
+              <mat-form-field class="form-field">
+                <input
+                  matInput
+                  placeholder="First Name"
+                  name="firstName"
+                  [(ngModel)]="registerUserData.firstName"
+                  required
+                />
+              </mat-form-field>
+            </div>
+
+            <div class="form-group ">
+              <mat-form-field class="form-field">
+                <input
+                  matInput
+                  placeholder="Last Name"
+                  name="lastName"
+                  [(ngModel)]="registerUserData.lastName"
+                  required
+                />
+              </mat-form-field>
+            </div>
+
+            <div class="form-group ">
+              <mat-form-field class="form-field">
+                <input
+                  matInput
+                  placeholder="User Name"
+                  name="userName"
+                  [(ngModel)]="registerUserData.userName"
+                  required
+                />
+              </mat-form-field>
+            </div>
+
+            <div class="form-group">
+              <mat-form-field class="form-field">
+                <input
+                  matInput
+                  placeholder="Email"
+                  name="email"
+                  [(ngModel)]="registerUserData.email"
+                  required
+                />
+              </mat-form-field>
+            </div>
+
+            <div class="form-group">
+              <mat-form-field class="form-field">
+                <input
+                  matInput
+                  placeholder="Password"
+                  name="password"
+                  [(ngModel)]="registerUserData.password"
+                  required
+                />
+              </mat-form-field>
+            </div>
+
+            <button
+              mat-raised-button
+              color="primary"
+              type="button"
+              class="float-right"
+              (click)="registerUser()"
+            >
+              Register
+            </button>
+          </form>
+        </div>
+        <!--/card-block-->
+      </div>
+      <!-- /form card login -->
+    </div>
+  </div>
+</div>

@@ -1,0 +1,18 @@
+<div class="row mt-5">
+  <div class="col-md-4 mb-3" *ngFor="let regularEvent of regularEvents" >
+    <div class="card text-center">
+        <div class="card-footer text-muted">
+            <h6>Events Hub</h6> 
+           </div>
+        <div class="card-body">
+            <h5 class="card-title">{{regularEvent.name}}</h5>
+            <p class="card-text">{{regularEvent.description}}</p>
+            <a href="#" class="btn btn-primary">Buy Tickets</a>
+        </div>
+        <div class="card-footer text-muted">
+           <h6>{{regularEvent.date | date:'shortDate'}}</h6> 
+          </div>
+    </div>
+  </div>
+</div>
+
